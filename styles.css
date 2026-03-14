@@ -147,9 +147,8 @@ ul {
 }
 
 .hero h1 {
-  font-family: fredericka-the-greatest, serif;
   font-size: clamp(2.2rem, 6vw, 3.8rem);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.4rem;
 }
@@ -158,6 +157,27 @@ ul {
   font-size: clamp(1rem, 2.5vw, 1.35rem);
   color: var(--text-muted);
   font-weight: 300;
+}
+
+.hero-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.hero-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.hero-social a:hover {
+  color: var(--text);
+  transform: translateY(-2px);
+  opacity: 1;
 }
 
 /* --- Sections --- */
@@ -306,32 +326,6 @@ ul {
   line-height: 1.75;
 }
 
-/* --- Contact Links --- */
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.contact-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: transform var(--transition);
-}
-
-.contact-link:hover {
-  transform: translateY(-3px);
-  opacity: 1;
-}
-
-.contact-link svg {
-  opacity: 0.85;
-}
 
 /* --- Footer --- */
 .site-footer {
