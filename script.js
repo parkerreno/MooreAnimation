@@ -1,5 +1,5 @@
 /* ========================================
-   Thomas K. Moore — Portfolio Scripts
+   Thomas K. Moore - Portfolio Scripts
    ======================================== */
 
 (function () {
